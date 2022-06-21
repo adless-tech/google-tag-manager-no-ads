@@ -38,14 +38,14 @@ ___TEMPLATE_PARAMETERS___
         ]
       }
     ],
-    "help": "You can find your earner ID at adless.net/earnings",
+    "help": "You can find your earner ID at adless.net/earnings.",
     "notSetText": "Earner ID is required",
     "alwaysInSummary": false
   },
   {
     "type": "PARAM_TABLE",
     "name": "services",
-    "displayName": "Additional Services",
+    "displayName": "Additional services",
     "paramTableColumns": [
       {
         "param": {
@@ -53,24 +53,24 @@ ___TEMPLATE_PARAMETERS___
           "name": "id",
           "displayName": "Service ID",
           "simpleValueType": true,
-          "help": "Service ID without quotes",
+          "help": "Service ID without quotes.",
           "notSetText": "NO_ADS",
           "valueHint": "NO_ADS"
         },
         "isUnique": true
       }
     ],
-    "help": "The service \"NO_ADS\" is automatically used in this tag. Use this tag to specify additional services.",
+    "help": "The service \"NO_ADS\" is automatically used in this tag. Use this field to specify additional services that you provide.",
     "alwaysInSummary": false
   },
   {
     "type": "TEXT",
     "name": "configuration",
-    "displayName": "Additional Configuration",
+    "displayName": "Additional configuration",
     "simpleValueType": true,
     "lineCount": 10,
     "valueHint": "{ \"paywall\": true  }",
-    "help": "Additional configuration can be used to provide additional properties to the config struct. A JSON-encoded string is expected.",
+    "help": "This field can be used to provide additional settings. The available settings are described in adless.net/get-started. A JSON-encoded string is expected.",
     "valueValidators": [
       {
         "type": "REGEX",
