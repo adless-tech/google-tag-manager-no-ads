@@ -1,4 +1,6 @@
 homepage: "https://adless.net"
 documentation: "https://adless.net/get-started/gtm"
 versions:
+  - sha: 6ea5ac7374f1de1f7a56c70aa396a6a3abb04a8c
+    changeNotes: Initial release.
 
