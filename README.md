@@ -13,4 +13,4 @@ This template is optimized for using tag sequencing to handle fallback behavior 
 - If the visitor is authenticated with Adless and pays for not seeing ads, the tag will **fail**.
 - Otherwise the tag will **succeed**.
 
-The reason for this is that we want to use a cleanup trigger to run any fallback and GTM only allows you to condition cleanup on failures, not success. To do so, you need to use the "Don't fire <cleanup tag> if <this tag> fails" option as described in the [Tag Manager Help](https://support.google.com/tagmanager/answer/6238868). See [adless.net/get-started/gtm](https://adless.net/get-started/gtm) for further information. 
+The reason for this is that we want to use a cleanup trigger to run any fallback and GTM only allows you to condition cleanup on failures, not success. To do so, you need to use the "Don't fire \<cleanup tag> if \<this tag> fails" option as described in the [Tag Manager Help](https://support.google.com/tagmanager/answer/6238868). See [adless.net/get-started/gtm](https://adless.net/get-started/gtm) for further information. 
