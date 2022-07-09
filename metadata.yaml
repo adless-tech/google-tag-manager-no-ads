@@ -3,8 +3,3 @@ documentation: "https://adless.net/get-started/gtm"
 versions:
   - sha: 565524f6f19ed40f213d9938003bcf6550b67ac4
     changeNotes: General alignment with style guide.
-  - sha: 0d21e5e48b07d463656cd1ab7e171155c6dcaa7e
-    changeNotes: Resize image to 96x96 to comply with style guide.
-  - sha: 6ea5ac7374f1de1f7a56c70aa396a6a3abb04a8c
-    changeNotes: Initial release.
-
