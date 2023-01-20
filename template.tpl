@@ -112,9 +112,9 @@ injectScript("https://static.adless.net/adless.js", () => {
       });
       
       if((services || []).filter(s => s == "NO_ADS").length > 0) {
-         data.gtmOnSuccess();
+        data.gtmOnSuccess();  // Succeed if "no ads" service is rejected, show ads as next thing in sequence using the cleanup tag feature
       } else {
-        data.gtmOnFailure();
+        data.gtmOnFailure();  // Fail if "no ads" service is NOT rejected, do not show ads by using the "don't fire <cleanup tag> if <this tag> fails" option
       }
       
       if(oldRejectServices) {
@@ -129,10 +129,6 @@ injectScript("https://static.adless.net/adless.js", () => {
           "provide": services
         }
       });
-      
-       if((services || []).filter(s => s == "NO_ADS").length > 0) {
-         data.gtmOnFailure();
-       }
        
       if(oldProvideServices) {
         oldProvideServices(services);
